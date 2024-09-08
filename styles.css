@@ -1,0 +1,191 @@
+:root {
+    --color_1: #DCC7BE;
+    --color_2: #CBB9A8;
+    --color_3: #145C9E;
+    --color_4: #0B4F6C;
+    --color_5: #1F271B;
+    --white: #fff;
+    
+}
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    width:80%;
+    margin:60px auto;
+    background-color: var(--color_1);
+}
+
+.circleBtn{
+    border-radius:50%;
+    width:30px;
+    height: 30px;
+    cursor:pointer;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected {
+    background-color: var(--color_3);
+    opacity: 0.5;
+    color:#fff;
+}
+
+.material-symbols-outlined {
+    font-size: 20px;
+   
+/*  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24*/
+}
+
+.rotate-90 {
+    transform: rotate(-90deg);
+}
+#addressBar-container {
+    width:60%;
+    margin:10px auto;
+    border-radius: 30px;
+    max-width:1018px;
+    padding:15px 30px;
+    background-color: var(--white);
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:10px;
+}
+
+#addressBar-input {
+    width:100%;
+    border:none;
+    outline:none;
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    flex:2;
+}
+#addressBar-up {
+    background-color: var(--color_1);
+    opacity:50%;
+}
+#addressBar-newFolderBtn {
+    background-color: var(--color_1);
+}
+#addressBar-searchBtn {
+    background-color: var(--color_2);
+}
+
+
+.addressBar-navBtn{
+    
+    
+    background-color:var(--white);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#filesListBlock-container {
+    width:60%;
+    margin:92px auto;
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    row-gap: 26px;
+}
+
+.filesListBlock-item {
+    width:90px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+    padding:5px;
+}
+.filesListBlock-item:hover {    
+    background-color: var(--color_3);
+    opacity: 0.5;
+    color:#fff;
+ 
+}
+.filesListBlock-itemIconContainer {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    
+}
+
+.filesListBlock-itemIcon {
+    width:90%;
+}
+
+.filesListBlock-itemTag {
+    text-align:center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    
+}
+
+
+#filesListList-container {    
+    width: 60%;
+    margin:92px auto;
+ 
+}
+
+#filesListList-container tr:hover {
+    background-color: var(--color_5);
+    opacity: 0.5;
+    color:#fff;
+/*    border:1px solid var(--color_5);*/
+}
+#filesListList-container th,#filesListList-container td{
+     text-align:left;
+     padding:20px 25px;
+     border:1px solid transparent;
+ }
+
+
+.filesListList-item {
+    height:50px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:50px;
+}
+
+.filesListList-itemIconContainer {
+    
+
+}
+
+.filesListList-itemIcon {
+    height:25px;
+}
+
+.filesListList-itemTag {
+    
+    
+}
+
+
